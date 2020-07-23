@@ -1,0 +1,132 @@
+.container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: minmax(100px, 25%) 1fr;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  /* max-width: 400px;
+  max-height: 400px; */
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+}
+
+.msg-box {
+  display: flex;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+  height: 10%;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  padding: 10px 20px;
+  margin-top: auto;
+}
+
+.left-msg {
+  display: flex;
+  margin: 3px auto 3px 3px;
+  /* background-color: #ccc;
+  border-radius: 5px; */
+}
+
+.right-msg {
+  display: flex;
+
+  margin: 3px 3px 3px auto;
+  /* background-color: #ccc; */
+  /* border-radius: 5px; */
+}
+
+.typing {
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+}
+
+.text {
+  border-radius: 5px;
+  background-color: #ccc;
+  margin: 5px;
+  padding: 3px 5px;
+}
+
+.me {
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+  margin: auto 0;
+  text-transform: capitalize;
+}
+
+.topBar {
+  margin-bottom: auto;
+  border-radius: 0 5px 0 0;
+  background-color: rgb(29, 165, 97);
+  text-transform: capitalize;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.userBox {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+ul li::before {
+  content: "\2022";
+  color: rgb(29, 165, 97);
+  font-weight: 600;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.btn {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* .btn:hover {
+  background-color: rgb(29, 165, 97);
+} */
