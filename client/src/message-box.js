@@ -7,7 +7,6 @@ const MessageBox = ({ socket, user }) => {
     who: user,
   });
 
-  console.log(user);
   const [messages, setMessages] = React.useState([]);
   const [typing, setTyping] = React.useState("");
 
